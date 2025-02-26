@@ -20,11 +20,11 @@ const Header = () => {
             <h1 className=" font-bold text-2xl italic   bg-gradient-to-tl from-[#6C1510] via-[#E1281E] via-[#BFA4A4] via-[#CF2C23] to-[#FF3428] bg-clip-text text-transparent">AskSphere</h1>
           </div>
           <nav className="hidden md:flex space-x-6">
-            <a href="/" className="font-bold text-white hover:text-[#D7263D] hover:font-extrabold ">Home</a>
-            <a href="/queries" className="font-bold text-white  hover:text-[#D7263D] hover:font-extrabold">Queries</a>
-            <a href="/profile" className="font-bold text-white  hover:text-[#D7263D] hover:font-extrabold">Profile</a>
-            <a href="#" className="font-bold text-white  hover:text-[#D7263D] hover:font-extrabold">Contact</a>
-            <a href="#" className="font-bold text-white hover:text-[#D7263D] hover:font-extrabold">About</a>
+            <Link to="/" className="font-bold text-white hover:text-[#D7263D] hover:font-extrabold ">Home</Link>
+            <Link to="/queries" className="font-bold text-white  hover:text-[#D7263D] hover:font-extrabold">Queries</Link>
+            <Link to="/profile" className="font-bold text-white  hover:text-[#D7263D] hover:font-extrabold">Profile</Link>
+            <Link to="#" className="font-bold text-white  hover:text-[#D7263D] hover:font-extrabold">Contact</Link>
+            <Link to="#" className="font-bold text-white hover:text-[#D7263D] hover:font-extrabold">About</Link>
           </nav>
           <div className="flex space-x-4">
             <Link to = "/login">

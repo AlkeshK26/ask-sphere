@@ -6,9 +6,12 @@ body {
     background: -moz-linear-gradient(225deg, hsla(229, 70%, 35%, 1) 26%, hsla(225, 89%, 41%, 1) 36%, hsla(229, 86%, 15%, 1) 54%, hsla(0, 0%, 0%, 1) 83%);
     background: -webkit-linear-gradient(225deg, hsla(229, 70%, 35%, 1) 26%, hsla(225, 89%, 41%, 1) 36%, hsla(229, 86%, 15%, 1) 54%, hsla(0, 0%, 0%, 1) 83%);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1B329A", endColorstr="#0B39C4", GradientType=1 );
-
+    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: var(--font-serif);
     color: white;
-    font-family: 'Arial', sans-serif; 
+    /*font-family: 'Arial', sans-serif;*/ 
     margin: 0; 
     padding: 0px;
     height: 100vh;
