@@ -25,7 +25,7 @@ const Home = () => {
         <SwiperSlide>
           <div className="relative w-full h-[400px]  text-white italic rounded-2xl" >
             <div className="absolute inset-0 bg-cover bg-center rounded-2xl" style={{ backgroundImage: "url('../../carousel1.jpg')" }}></div>
-            <div className="absolute inset-0 w-1/2 bg-gradient-to-r from-blue-800 to-transparent rounded-2xl"></div>
+            <div className="absolute inset-0 w-1/2 bg-gradient-to-r from-black to-transparent rounded-2xl"></div>
               <div className="relative z-10  p-6 md:p-18 rounded-lg text-left ">
                 <h1 className="text-6xl md:text-6xl font-bold bg-gradient-to-tl from-[#6C1510] via-[#E1281E] via-[#BFA4A4] via-[#CF2C23] to-[#FF3428] bg-clip-text text-transparent">Ask. <br></br>Solve.<br/> Grow Together.</h1>
                 <p className="mt-4 text-lg md:text-xl text-black md:text-white">Join a community of learners and problem solvers.</p>
@@ -40,7 +40,7 @@ const Home = () => {
         <SwiperSlide>
           <div className="relative w-full h-[400px]  text-white italic rounded-2xl" >
           <div className="absolute inset-0 bg-cover bg-center rounded-2xl" style={{ backgroundImage: "url('../../carousel2.jpg')" }}></div>
-          <div className="absolute inset-0 w-1/2 bg-gradient-to-r from-blue-800 to-transparent rounded-2xl"></div>
+          <div className="absolute inset-0 w-1/2 bg-gradient-to-r from-black to-transparent rounded-2xl"></div>
             <div className="relative z-10 p-6 md:p-18 rounded-lg text-left">
               <h1 className="text-6xl md:text-6xl font-bold bg-gradient-to-tl from-[#6C1510] via-[#E1281E] via-[#BFA4A4] via-[#CF2C23] to-[#FF3428] bg-clip-text text-transparent">Got Questions?<br/> Get Answers!</h1>
               <p className="mt-4 text-lg md:text-xl text-black md:text-white">Collaborate and find solutions to coding & academic queries.</p>
@@ -55,7 +55,7 @@ const Home = () => {
         <SwiperSlide>
           <div className="relative w-full h-[400px]  text-white italic rounded-2xl" >
           <div className="absolute inset-0 bg-contain bg-center rounded-2xl" style={{ backgroundImage: "url('../../carousel3.jpg')" }}></div>
-          <div className="absolute inset-0 w-1/2 bg-gradient-to-r from-blue-800 to-transparent rounded-2xl"></div>
+          <div className="absolute inset-0 w-1/2 bg-gradient-to-r from-black to-transparent rounded-2xl"></div>
             <div className="relative z-10 p-6 md:p-18 rounded-lg text-left">
               <h1 className="text-6xl md:text-6xl font-bold bg-gradient-to-tl from-[#6C1510] via-[#E1281E] via-[#BFA4A4] via-[#CF2C23] to-[#FF3428] bg-clip-text text-transparent">Help Others,<br/> Gain Knowledge!</h1>
               <p className="mt-4 text-lg md:text-xl text-black md:text-white">Share your expertise and make learning easier for others.</p>
