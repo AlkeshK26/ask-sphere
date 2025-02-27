@@ -12,8 +12,8 @@ const Header = () => {
 
   return (
     <>
-    <div className="fixed top-0 left-0 w-full h-16 bg-blue-950 bg-opacity-50 z-40"></div>
-    <header className="bg-transparent backdrop-blur-lg py-4 fixed top-0 left-0 w-full z-50">
+    <div className="fixed top-0 left-0 w-full h-16 bg-black bg-opacity-50 z-40"></div>
+    <header className="bg-grey-800 backdrop-blur-lg py-4 fixed top-0 left-0 w-full z-50">
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center">
             <img src='../../logo.jpg' alt='logo' className="w-14 h-14 rounded-full object-cover bg-transparent" />
