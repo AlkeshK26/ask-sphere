@@ -1,14 +1,3 @@
-// import React from 'react'
-
-// const Signup = () => {
-//   return (
-//     <div>
-//       Signup
-//     </div>
-//   )
-// }
-
-// export default Signup
 
 import React, { useState } from "react";
 
@@ -35,7 +24,7 @@ const Signup = () => {
   };
 
   return (
-    <div className="flex h-screen items-center justify-center bg-gray-900">
+    <div className="flex h-screen items-center justify-center">
       <div className="flex max-w-4xl rounded-lg bg-gray-800 shadow-lg">
         {/* Left Section */}
         <div className="w-1/2 p-6">
