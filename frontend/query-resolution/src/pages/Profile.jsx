@@ -2,11 +2,11 @@ import React, { useState } from "react";
 
 const Profile = () => {
   const [isEditing, setIsEditing] = useState(false);
-  const [name, setName] = useState("Ashish Jayaswal");
+  const [name, setName] = useState("Abhi Jhala");
   const [bio, setBio] = useState("Software Developer | Open Source Contributor");
   const [pronouns, setPronouns] = useState("he/him");
   const [location, setLocation] = useState("India");
-  const [email, setEmail] = useState("ashish@example.com");
+  const [email, setEmail] = useState("ashi@example.com");
 
   const handleEditClick = () => {
     setIsEditing(true);

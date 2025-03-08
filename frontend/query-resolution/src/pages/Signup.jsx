@@ -1,5 +1,6 @@
 
 import React, { useState } from "react";
+import axios from "axios";
 
 const Signup = () => {
   const [formData, setFormData] = useState({
@@ -18,9 +19,34 @@ const Signup = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form Data:", formData);
+    const submissionData = {
+      ...formData,
+      username: `${formData.firstName} ${formData.lastName}`, // Concatenate first and last name
+    };
+    console.log(submissionData);
+    try {
+      const response = await axios.post("http://localhost:8080/askSphere/api/v1/auth/signup", submissionData);
+      alert(response.data.message);
+    } catch (error) {
+      console.error(error.response.data);
+      alert("Signup failed. Try again.");
+
+      // Check if the error has a response object
+    if (error.response) {
+      console.error("Error response:", error.response);
+      alert(error.response.data?.message || "Signup failed. Try again.");
+    } else if (error.request) {
+      // The request was made but no response was received
+      console.error("No response received:", error.request);
+      alert("No response from server. Please check your connection.");
+    } else {
+      // Something else happened
+      console.error("Error details:", error.message);
+      alert("An unexpected error occurred. Please try again.");
+    }
+    }
   };
 
   return (
@@ -28,11 +54,11 @@ const Signup = () => {
       <div className="flex max-w-4xl rounded-lg bg-gray-800 shadow-lg">
         {/* Left Section */}
         <div className="w-1/2 p-6">
-          <img
+          {/* <img
             src="https://source.unsplash.com/400x600/?landscape"
             alt="Gallery"
             className="rounded-lg"
-          />
+          /> */}
           <h2 className="mt-4 text-xl font-semibold text-white">
             Capturing Moments, Creating Memories
           </h2>

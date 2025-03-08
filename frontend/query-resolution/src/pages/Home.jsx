@@ -68,22 +68,22 @@ const Home = () => {
       </Swiper>
 
       {/**Headline Section */}
-      <div class="flex mt-8 pt-8 pb-8">
-        <div class="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+      <div className="flex mt-8 pt-8 pb-8">
+        <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
           
-          <div class="w-full">
+          <div className="w-full">
             <img
               src="../../headline.jpg"
               alt="headline"
-              class="w-full h-[300px] md:h-[400px] object-cover rounded-2xl shadow-lg"
+              className="w-full h-[300px] md:h-[400px] object-cover rounded-2xl shadow-lg"
             />
           </div>
 
-          <div class="h-full flex flex-col justify-center px-6 md:px-12 md:text-left ">
-            <h1 class="text-3xl md:text-7xl font-[1000] bg-gradient-to-tl from-[#6C1510] via-[#E1281E] via-[#BFA4A4] via-[#CF2C23] to-[#FF3428] bg-clip-text text-transparent">
+          <div className="h-full flex flex-col justify-center px-6 md:px-12 md:text-left ">
+            <h1 className="text-3xl md:text-7xl font-[1000] bg-gradient-to-tl from-[#6C1510] via-[#E1281E] via-[#BFA4A4] via-[#CF2C23] to-[#FF3428] bg-clip-text text-transparent">
               Your One-Stop Hub for Academic Queries
             </h1>
-            <p class="text-gray-100 text-lg mt-4">
+            <p className="text-gray-100 text-lg mt-4">
               Post your doubts, get solutions, and share knowledge with a growing
               community. Whether it's programming, theoretical concepts, or academic
               related - Solve it Here!

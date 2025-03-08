@@ -24,7 +24,7 @@ const Header = () => {
             <Link to="/queries" className="font-bold text-white  hover:text-[#D7263D] hover:font-extrabold">Queries</Link>
             <Link to="/profile" className="font-bold text-white  hover:text-[#D7263D] hover:font-extrabold">Profile</Link>
             <Link to="#" className="font-bold text-white  hover:text-[#D7263D] hover:font-extrabold">Contact</Link>
-            <Link to="#" className="font-bold text-white hover:text-[#D7263D] hover:font-extrabold">About</Link>
+            <Link to="/about" className="font-bold text-white hover:text-[#D7263D] hover:font-extrabold">About</Link>
           </nav>
           <div className="flex space-x-4">
             <Link to = "/login">

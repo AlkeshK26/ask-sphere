@@ -1,5 +1,6 @@
 
 import React, { useState } from "react";
+import axios from "axios";
 
 const Login = () => {
   const [formData, setFormData] = useState({
@@ -15,9 +16,18 @@ const Login = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("Login Data:", formData);
+    try {
+      const response = await axios.post("http://localhost:8080/askSphere/api/v1/auth/login", formData);
+      alert("Login successful!");
+      localStorage.setItem("token", response.data.jwtToken);
+      console.log(localStorage.getItem("token"));
+    } catch (error) {
+      console.error(error.response.data);
+      alert("Login failed. Check credentials.");
+    }
   };
 
   return (
@@ -25,11 +35,11 @@ const Login = () => {
       <div className="flex max-w-4xl rounded-lg bg-gray-800 shadow-lg">
         {/* Left Section */}
         <div className="w-1/2 p-6">
-          <img
+          {/* <img
             src="https://source.unsplash.com/400x600/?abstract"
             alt="Gallery"
             className="rounded-lg"
-          />
+          /> */}
           <h2 className="mt-4 text-xl font-semibold text-white">
             Welcome Back!
           </h2>
