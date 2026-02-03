@@ -1,2 +1,1 @@
-AskSphere is a full-stack web application designed to help students resolve academic doubts through community-driven discussions. Users can post queries in text, image, or video format, and receive answers from peers and subject experts. The platform includes features like upvoting, commenting, user authentication, and responsive UI for seamless interaction.
-Tech Stack: MERN Stack (MongoDB, Express.js, React.js, Node.js), Tailwind CSS
+
